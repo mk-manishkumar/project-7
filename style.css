@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+
+nav {
+  display: grid;
+  grid-template-columns: 4fr 7fr 1fr;
+  align-items: center;
+  margin: 1rem 0 1rem 2rem;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  font-size: 1.3rem;
+}
+
+.active-item {
+  color: #e07c24;
+}
+
+/* ********************************************** */
+
+/* section */
+
+/* left-section */
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+}
+
+.left-section {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.left-section h3 {
+  font-size: 2rem;
+}
+
+.left-section h1 {
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+.sub-headlines {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  margin-left: 5rem;
+}
+
+.sub-headline {
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.sub-headline img {
+  background-color: #fe5e35;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.text {
+  color: grey;
+  margin-top: 3rem;
+}
+
+.action-btns {
+  margin-top: 2rem;
+}
+
+.action-btn {
+  background-color: #fe5e35;
+  color: #fff;
+  border: none;
+  border-radius: 35px;
+  padding: 0.5rem 1.3rem;
+  font-size: 1.3rem;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+/* end of left-section */
+
+/* right-section */
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.discount {
+  position: relative;
+  top: 280px;
+  left: -45px;
+  height: 150px;
+  filter: drop-shadow(0 10px 0 rgba(0, 0, 0, 0.3));
+}
+
+.discount-content {
+  position: relative;
+  top: 160px;
+  color: #ffffff;
+}
+
+.discount-content h4 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.discount-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.headphone-div img:last-child {
+  height: 500px;
+  margin-top: -15rem;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.8rem;
+  margin-left: -8rem;
+  margin-top: -1rem;
+}
+
+.dot {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background-color: #fbd104;
+}
+
+.tomato-dot {
+  background-color: #fe5e35;
+}
+
+.black-dot {
+  background-color: #000000;
+}
+
+.right-section > .action-btn {
+  align-self: center;
+  margin-right: 8rem;
+}
+
+/* end of right-section */
+
+/* end of section */
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1050px) {
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .right-section {
+    margin-top: 1rem;
+    margin: auto;
+  }
+
+  .intro-section {
+    margin-bottom: 1.5rem;
+  }
+
+  .left-section {
+    text-align: center;
+  }
+
+  .dots {
+    margin-left: 0;
+  }
+
+  .right-section > .action-btn {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 850px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-items {
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  .headphone-div img:last-child {
+    height: 350px;
+    margin-top: -12rem;
+  }
+
+  .discount {
+    height: 120px;
+    top: 260px;
+  }
+
+  .discount-content {
+    left: -25px;
+  }
+
+  .discount-content h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+
+  .left-section h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 350px) {
+
+  .left-section h1 {
+    font-size: 2rem;
+  }
+
+  .left-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .action-btn {
+    margin-bottom: 1rem;
+  }
+
+  .left-section {
+    text-align: left;
+  }
+
+  .sub-headlines {
+    margin-left: 1rem;
+  }
+
+  .actions {
+    margin-left: -3rem;
+  }
+
+  .discount {
+    left: 10px;
+    height: 100px;
+    top: 240px;
+  }
+
+  .discount-content {
+    left: 25px;
+  }
+
+  .headphone-div img:last-child {
+    height: 300px;
+    margin-top: -10rem;
+  }
+
+  .dots{
+    margin-top: 0;
+  }
+
+  .dot{
+    padding: 0.5rem;
+  }
+
+  body{
+    min-width: 100%;
+  }
+
+  /* .right-section{
+    margin: 0;
+    width: 100%; */
+  }
+}
