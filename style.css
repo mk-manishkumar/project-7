@@ -239,7 +239,7 @@ nav {
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
 
   .left-section h1 {
     font-size: 2rem;
@@ -291,10 +291,5 @@ nav {
 
   body{
     min-width: 100%;
-  }
-
-  /* .right-section{
-    margin: 0;
-    width: 100%; */
   }
 }
